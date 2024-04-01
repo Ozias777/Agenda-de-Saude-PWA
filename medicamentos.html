@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Saúde - Medicamentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Agenda de Saúde</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="consultas.html">Consultas</a></li>
+                <li><a href="medicamentos.html">Medicamentos</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h2>Medicamentos</h2>
+            <p>Aqui você pode ver e adicionar medicamentos à sua agenda de saúde</p>
+        </section>
+
+        <section id="add-medication">
+            <h2>Adicionar Medicamento</h2>
+            <form id="medicineForm">
+                <input type="text" id="medicineName" placeholder="Nome do Medicamento" required>
+                <input type="date" id="medicineDate" required>
+                <input type="time" id="medicineTime" required>
+                <button class="getStartedBtn" type="submit">Adicionar Medicamento</button>
+            </form>
+        </section>
+
+        <section id="medicationTable">
+            <h2>Medicamentos Agendados</h2>
+            <table id="medications">
+                <thead>
+                    <tr>
+                        <th>Medicamento</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui serão adicionadas as linhas da tabela -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agenda de Saúde</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

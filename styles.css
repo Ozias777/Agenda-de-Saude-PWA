@@ -1,0 +1,134 @@
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilo do header */
+header {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do nav */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo do main */
+main {
+    padding: 20px;
+    padding-bottom: 60px; /* Aumenta o espaço na parte inferior do conteúdo para acomodar o footer */
+}
+
+
+/* Estilo do section */
+main section {
+    margin-bottom: 50px;
+}
+
+main section div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+main section div h2 {
+    text-align: center;
+    color: #4caf50; /* Cor verde padrão */
+}
+
+main section div p {
+    text-align: center;
+    color: black;
+}
+
+/* Estilo do botão */
+.getStartedBtn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.getStartedBtn:hover {
+    background-color: #45a049; /* Tom de verde mais escuro no hover */
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Reduz o espaço acima do rodapé */
+    z-index: 100; /* Define uma pilha de sobreposição para garantir que o footer fique sobre o conteúdo */
+}
+
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Estilo do section */
+main section {
+    margin-bottom: 30px; /* Aumenta o espaço entre as seções */
+}
+
+/* Estilo do welcome section */
+#welcome {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Aumenta o espaço abaixo do welcome section */
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    main section:last-child {
+        margin-bottom: 100px; /* Adiciona espaço entre a última section e o footer */
+    }
+}
