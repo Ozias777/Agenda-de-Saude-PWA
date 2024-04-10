@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de Saúde - Consultas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="/assets/CSS/styles.css">
+    <link rel="manifest" href="/assets/manifest.json">
 </head>
 <body>
     <header>
@@ -27,22 +27,23 @@
 
         <section id="add-appointment">
             <h2>Adicionar Consulta Médica</h2>
-            <form id="consultForm">
+            <form id="appointmentForm">
                 <input type="text" id="doctorName" placeholder="Nome do Médico" required>
-                <input type="date" id="consultDate" required>
-                <input type="time" id="consultTime" required>
+                <input type="date" id="appointmentDate" required>
+                <input type="time" id="appointmentTime" required>
                 <button class="getStartedBtn" type="submit">Adicionar Consulta</button>
             </form>
         </section>
 
         <section id="appointmentTable">
             <h2>Consultas Agendadas</h2>
-            <table id="consultations">
+            <table id="appointments">
                 <thead>
                     <tr>
                         <th>Médico</th>
                         <th>Data</th>
                         <th>Hora</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,6 +55,7 @@
     <footer>
         <p>&copy; 2024 Agenda de Saúde</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="/assets/JS/script.js"></script>
+    <script src="/assets/JS/notifications.js"></script>
 </body>
 </html>
